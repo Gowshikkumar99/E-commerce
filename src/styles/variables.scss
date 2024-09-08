@@ -1,0 +1,42 @@
+
+//Fonts
+@mixin Heading_2{
+font-family: 'inter';
+font-weight: bold;
+font-size: rem(61);
+}
+
+@mixin Heading_04 {
+font-family: 'inter';
+font-weight: bold;
+font-size: rem(39);
+}
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px,
+  xxl: 1460px,
+  xxxl: 1920px,
+);
+
+//Media Query
+@mixin mq($width, $type: min) {
+    // Check if $width is a key in $grid-breakpoints and retrieve its value
+    @if map_has_key($grid-breakpoints, $width) {
+      $width: screen($width);
+    }
+  
+    // Adjust width for max-width queries
+    @if $type == max {
+      $width: $width - 1px;
+    }
+  
+    // Create the media query with the calculated width
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+
