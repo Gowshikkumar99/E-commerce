@@ -1,0 +1,73 @@
+.buttons {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: $color-white;
+    padding: 11.5px 15px;
+    border-radius: 40px;
+    text-decoration: none;
+    position: relative;
+
+    .button-text {
+        font-size: 16px;
+    }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .notification-item {
+        position: absolute;
+        background-color: $color-red;
+        color: $color-white;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: -5px;
+        right: -2px;
+      }
+
+      &.--btn-primary {
+        background-color: $btn-primary-color;
+
+        .icon {
+            span:before {
+                font-size: 24px;
+                color: $color-white;
+            }
+          }
+      }
+
+      &.--btn-secondary {
+        background-color: $btn-secondary-color;
+        color: $btn-primary-color;
+
+        .icon {
+            span:before {
+                font-size: 24px;
+                color: $btn-primary-color;
+            }
+          }
+      }
+
+      &.--btn-outline {
+        border: 1px solid $color-black;
+        color: $color-black;
+
+        .icon {
+            span:before {
+                font-size: 24px;
+                color: $color-black;
+            }
+          }
+      }
+
+      &.--only-icon {
+        padding: 15px;
+        font-size: 17px;
+      }
+
+}
