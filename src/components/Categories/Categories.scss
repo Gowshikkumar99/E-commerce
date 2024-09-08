@@ -1,0 +1,41 @@
+.category {
+    &__heading {
+        font-family: 'Inter';
+        font-size: rem(39);
+        font-weight: bold;
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem(32);
+    }
+
+    &__item {
+        background-color: #F3F4F7;
+        position: relative;
+        width: 100%;
+        height: rem(453);
+        border-radius: rem(6);
+
+        &.--half {
+            width: calc(50% - rem(16));
+        }
+    }
+
+    &__image-block {
+        position: absolute;
+        right: 0;
+    }
+
+    &__name-block {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+    }
+
+    &__name {
+        @include Heading_04;
+        margin-bottom: rem(24);
+    }
+}

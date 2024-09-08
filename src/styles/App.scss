@@ -1,0 +1,16 @@
+//common
+@import './variables.scss';
+@import './fonts.scss';
+@import './_functions.scss';
+@import './colors.scss';
+@import url("../assets/fonts/icomoon/style.css");
+
+
+//Components
+@import '../components/Buttons/Buttons.scss';
+@import '../components/Navigation/NavMenu.scss';
+@import '../components/Hero/Hero.scss';
+@import '../components/Categories/Categories.scss';
+
+//Pages
+@import '../pages/HomePage.scss';

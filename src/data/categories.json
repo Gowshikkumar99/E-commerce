@@ -1,0 +1,52 @@
+{
+ "category":[
+    {
+        "id":1,
+        "category":"Sitting Room",
+        "type":"",
+        "image":"../../assets/images/sofa.png",
+        "Button":{
+            "name":"Shop Now",
+            "icon":"arrow-right",
+            "variant":"btn-outline",
+            "color":""
+        }
+    },
+    {
+        "id":2,
+        "category":"Accessories",
+        "type":"--half",
+        "image":"../../assets/images/item-1.png",
+        "Button":{
+            "name":"Shop Now",
+            "icon":"arrow-right",
+            "variant":"btn-outline",
+            "color":""
+        }
+    },
+    {
+        "id":3,
+        "category":"Kitchen",
+        "type":"--half",
+        "image":"../../assets/images/item-2.png",
+        "Button":{
+            "name":"Shop Now",
+            "icon":"arrow-right",
+            "variant":"btn-outline",
+            "color":""
+        }
+    },
+    {
+        "id":4,
+        "category":"Bedroom",
+        "type":"",
+        "image":"../../assets/images/item-3.png",
+        "Button":{
+            "name":"Shop Now",
+            "icon":"arrow-right",
+            "variant":"btn-outline",
+            "color":""
+        }
+    }
+ ]
+}
