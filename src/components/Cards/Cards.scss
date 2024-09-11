@@ -1,0 +1,51 @@
+.product {
+    &__card {
+        position: relative;
+        cursor: pointer;
+
+        width: rem(296);
+        height: rem(313);
+
+        &__image-container {
+            background: #F3F4F7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        &__image .buttons {
+            position: absolute;
+            display: flex;
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 0.3s ease, transform 0.3s ease; 
+            top: calc(100% - 5rem); 
+            left: 20px;
+        }
+
+        &__price-name {
+            display: flex;
+            justify-content: space-between;
+            margin-top: rem(16px);
+        }
+
+        &__color {
+            display: flex;
+            gap: 10px;
+
+            &-btn {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &__card:hover {
+        .product__card__image .buttons {
+            opacity: 1;
+            transform: translateY(0); 
+        }
+    }
+}

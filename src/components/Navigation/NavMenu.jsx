@@ -19,7 +19,6 @@ function NavMenu() {
                 <Button 
                     route="" 
                     text="" 
-                    onlyIcon="yes" 
                     icon="cart" 
                     variant="btn-secondary" 
                     notification={4} 
