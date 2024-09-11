@@ -1,28 +1,23 @@
 {
   "files": {
     "main.css": "/E-commerce/static/css/main.3132e2a1.css",
-    "main.js": "/E-commerce/static/js/main.7ff3b6cb.js",
+    "main.js": "/E-commerce/static/js/main.a9903279.js",
     "static/js/453.0297a6b4.chunk.js": "/E-commerce/static/js/453.0297a6b4.chunk.js",
-    "static/media/Banner.png": "/E-commerce/static/media/Banner.03619fb76ea055337106.png",
     "static/media/Inter-Bold.ttf": "/E-commerce/static/media/Inter-Bold.56d92680ed4f919832bd.ttf",
     "static/media/Inter-Light.ttf": "/E-commerce/static/media/Inter-Light.37b4b1e40239caa91623.ttf",
     "static/media/Inter-Thin.ttf": "/E-commerce/static/media/Inter-Thin.a9ffd35b0feafa94ac54.ttf",
     "static/media/Inter-Regular.ttf": "/E-commerce/static/media/Inter-Regular.fd012577d3f8e88a8149.ttf",
-    "static/media/item-1.png": "/E-commerce/static/media/item-1.b24bb3e47547ff898e97.png",
-    "static/media/sofa.png": "/E-commerce/static/media/sofa.3e867015b0cb413c960f.png",
-    "static/media/item-3.png": "/E-commerce/static/media/item-3.f146d4ff59d2b531c78c.png",
-    "static/media/item-2.png": "/E-commerce/static/media/item-2.257bc53c58dfc721d1e2.png",
     "static/media/icomoon.svg?ntyesi": "/E-commerce/static/media/icomoon.c433064d75b2fc9db9fc.svg",
     "static/media/icomoon.eot?ntyesi": "/E-commerce/static/media/icomoon.c5d499f0a2fc098e593f.eot",
     "static/media/icomoon.woff?ntyesi": "/E-commerce/static/media/icomoon.eabf0600f194e61edb63.woff",
     "static/media/icomoon.ttf?ntyesi": "/E-commerce/static/media/icomoon.b6aeec3f56fe64954c83.ttf",
     "index.html": "/E-commerce/index.html",
     "main.3132e2a1.css.map": "/E-commerce/static/css/main.3132e2a1.css.map",
-    "main.7ff3b6cb.js.map": "/E-commerce/static/js/main.7ff3b6cb.js.map",
+    "main.a9903279.js.map": "/E-commerce/static/js/main.a9903279.js.map",
     "453.0297a6b4.chunk.js.map": "/E-commerce/static/js/453.0297a6b4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3132e2a1.css",
-    "static/js/main.7ff3b6cb.js"
+    "static/js/main.a9903279.js"
   ]
 }
