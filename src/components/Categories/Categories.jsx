@@ -1,9 +1,5 @@
 import React, { useEffect,useState } from 'react'
 import { Button } from '../Buttons/Buttons';
-import sofa from '../../assets/images/sofa.png';
-import item_1 from '../../assets/images/item-1.png';
-import item_2 from '../../assets/images/item-2.png';
-import item_3 from '../../assets/images/item-3.png';
 import data from '../../data/categories.json';
 
 function Categories() {
