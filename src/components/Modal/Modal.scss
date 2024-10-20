@@ -1,0 +1,30 @@
+.modal-custom {
+    width: rem(720);
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    right: 0;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); // A soft shadow
+    z-index: 100;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transform: translateX(800px);
+    display: none;
+
+    
+
+    &__header {
+        .close-btn {
+            border: none;
+            padding: rem(10);
+            border-radius: 50px;
+            background: $btn-secondary-color;
+            position: absolute;
+            left: 10px;
+        }
+    }
+
+    .login-form{
+        padding: 10px 20%;
+    }
+}

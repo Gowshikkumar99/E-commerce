@@ -1,21 +1,42 @@
-$rem-base: 16px;
+$font-size-rem: 16px;
+$unit-range: (
+  'px': 1px,
+  'em': 1em,
+  'rem': 1rem,
+);
 
-@function strip-unit($num) {
-  @return $num / ($num * 0 + 1);
-}
-
-@function convert-to-rem($value, $base-value: $rem-base)  {
-  $value: strip-unit($value) / strip-unit($base-value) * 1rem;
-  @if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
-  @return $value;
-}
-
-@function rem($values, $base-value: $rem-base) {
-  $max: length($values);
-  @if $max == 1 { @return convert-to-rem(nth($values, 1), $base-value); }
-  $remValues: ();
-  @for $i from 1 through $max {
-    $remValues: append($remValues, convert-to-rem(nth($values, $i), $base-value));
+@function addUnit($value, $unit) {
+  @if type-of($unit) != 'string' {
+    @error 'Value for unit should be a string.';
   }
-  @return $remValues;
+
+  $matched-unit: map-get($unit-range, $unit);
+
+  @if $matched-unit {
+    @return $value * $matched-unit;
+  } @else {
+    @error 'Value for unit not a valid unit.';
+  }
+}
+
+@function px2unit($unit, $pixels, $context) {
+  @if $unit {
+    @if (unitless($pixels)) {
+      $pixels: $pixels * 1px;
+    }
+
+    @if (unitless($context)) {
+      $context: $context * 1px;
+    }
+
+    @return addUnit(calc(($pixels/$context)), $unit);
+  }
+}
+
+@function em($pixels, $context) {
+  @return px2unit('em', $pixels, $context);
+}
+
+@function rem($pixels, $context: $font-size-rem) {
+  @return px2unit('rem', $pixels, $context);
 }

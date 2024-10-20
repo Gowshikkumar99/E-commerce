@@ -1,0 +1,50 @@
+.products {
+    &__top-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0px 20px 0px ;
+        position: relative;
+    }
+
+    &__main-block {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    &__heading {
+        @include Heading_04;
+    }
+
+    &__filter {
+        height: 30px;
+        overflow: hidden;
+        position: absolute;
+        right: 0px;
+        border: 1px solid $color-grey-8;
+        padding: 0px 10px 0px 10px;
+        border-radius: 10px;
+
+        &:hover{
+            overflow: visible;
+        }
+
+        &__menu {
+            list-style: none;
+            padding: unset;
+            margin: unset;
+            padding-top: 10px;
+        }
+
+        &__item {
+            cursor: pointer;
+            padding: 5px 0px;
+        }
+    }
+    &__bottom-block {
+        display: flex;
+        justify-content: center;
+    }
+}

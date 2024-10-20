@@ -1,4 +1,5 @@
 //common
+@import './layouts.scss';
 @import './variables.scss';
 @import './fonts.scss';
 @import './_functions.scss';
@@ -13,6 +14,9 @@
 @import '../components/Categories/Categories.scss';
 @import '../components/Products/Products.scss';
 @import '../components/Cards/Cards.scss';
+@import '../components/Modal/Modal.scss';
+@import '../components/Forms/Login/Login.scss';
+@import '../components/Forms/Registraiton/Registration.scss';
 
 //Pages
 @import '../pages/HomePage.scss';
